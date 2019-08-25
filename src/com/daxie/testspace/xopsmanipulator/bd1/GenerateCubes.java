@@ -5,7 +5,7 @@ package com.daxie.testspace.xopsmanipulator.bd1;
 import com.daxie.xops.bd1.BD1Generator;
 import com.daxie.xops.bd1.BD1UniformGenerator;
 
-public class GenerateBlocks {
+public class GenerateCubes {
 	public static void main(String[] args) {
 		BD1Generator bd1_generator;
 
