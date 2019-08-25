@@ -1,4 +1,4 @@
-//XOPSManipulator version:3.0.0
+//XOPSManipulator version:4.0.1
 
 package com.daxie.testspace.xopsmanipulator.pd1;
 
@@ -8,7 +8,7 @@ import java.util.Random;
 
 import com.daxie.tool.MathFunctions;
 import com.daxie.xops.pd1.PD1Manipulator;
-import com.daxie.xops.pd1.Point;
+import com.daxie.xops.pd1.PD1Point;
 
 public class RandomRotationOfDirection {
 	public static void main(String[] args) {
@@ -25,8 +25,8 @@ public class RandomRotationOfDirection {
 
 		Random random = new Random();
 
-		List<Point> points = pd1_manipulator.GetPoints();
-		for (Point point : points) {
+		List<PD1Point> points = pd1_manipulator.GetPoints();
+		for (PD1Point point : points) {
 			int deg = random.nextInt(360);
 			float rad = MathFunctions.DegToRad(deg);
 
