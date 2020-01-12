@@ -1,11 +1,11 @@
-//XOPSManipulator version:3.0.0
+//XOPSManipulator version:6.0.0
 
 package com.daxie.testspace.xopsmanipulator.xml;
 
 import java.util.Map;
 
-import com.daxie.xops.character.CharacterData;
-import com.daxie.xops.xml.CharacterDataXMLParser;
+import com.daxie.xops.properties.entity.character.CharacterData;
+import com.daxie.xops.properties.xml.CharacterDataXMLParser;
 
 public class GetCharacterDataFromXML {
 	public static void main(String[] args) {

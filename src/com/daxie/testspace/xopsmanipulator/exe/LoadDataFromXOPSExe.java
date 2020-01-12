@@ -1,12 +1,12 @@
-//XOPSManipulator version:3.0.0
+//XOPSManipulator version:6.0.0
 
 package com.daxie.testspace.xopsmanipulator.exe;
 
 import java.io.FileNotFoundException;
 
-import com.daxie.xops.character.CharacterData;
-import com.daxie.xops.exe.XOPSExeManipulator;
-import com.daxie.xops.weapon.WeaponData;
+import com.daxie.xops.properties.entity.character.CharacterData;
+import com.daxie.xops.properties.entity.weapon.WeaponData;
+import com.daxie.xops.properties.exe.XOPSExeManipulator;
 
 public class LoadDataFromXOPSExe {
 	public static void main(String[] args) {

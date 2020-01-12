@@ -1,11 +1,11 @@
-//XOPSManipulator version:3.0.0
+//XOPSManipulator version:6.0.0
 
 package com.daxie.testspace.xopsmanipulator.xml;
 
 import java.util.Map;
 
-import com.daxie.xops.weapon.WeaponData;
-import com.daxie.xops.xml.WeaponDataXMLParser;
+import com.daxie.xops.properties.entity.weapon.WeaponData;
+import com.daxie.xops.properties.xml.WeaponDataXMLParser;
 
 public class GetWeaponDataFromXML {
 	public static void main(String[] args) {

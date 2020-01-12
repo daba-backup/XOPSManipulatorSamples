@@ -1,4 +1,4 @@
-//XOPSManipulator version:3.0.0
+//XOPSManipulator version:6.0.0
 
 package com.daxie.testspace.xopsmanipulator.xml;
 
@@ -6,9 +6,9 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.daxie.xops.character.CharacterData;
-import com.daxie.xops.xcs.XCSManipulator;
-import com.daxie.xops.xml.CharacterDataXMLOutputter;
+import com.daxie.xops.properties.entity.character.CharacterData;
+import com.daxie.xops.properties.xml.CharacterDataXMLOutputter;
+import com.daxie.xops.properties.xms.xcs.XCSManipulator;
 
 public class OutputCharacterDataXML {
 	public static void main(String[] args) {

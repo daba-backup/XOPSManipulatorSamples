@@ -1,12 +1,12 @@
-//XOPSManipulator version:3.0.0
+//XOPSManipulator version:6.0.0
 
 package com.daxie.testspace.xopsmanipulator.exe;
 
 import java.io.FileNotFoundException;
 
-import com.daxie.xops.exe.XOPSExeManipulator;
-import com.daxie.xops.weapon.WeaponData;
-import com.daxie.xops.xgs.XGSManipulator;
+import com.daxie.xops.properties.entity.weapon.WeaponData;
+import com.daxie.xops.properties.exe.XOPSExeManipulator;
+import com.daxie.xops.properties.xms.xgs.XGSManipulator;
 
 //Port weapon data acquired from a XGS file to an exe file of XOPS.
 public class PortWeaponDataToXOPSExe {

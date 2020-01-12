@@ -1,4 +1,4 @@
-//XOPSManipulator version:3.0.0
+//XOPSManipulator version:6.0.0
 
 package com.daxie.testspace.xopsmanipulator.openxops;
 
@@ -7,8 +7,8 @@ import java.io.UnsupportedEncodingException;
 import java.util.Map;
 import java.util.TreeMap;
 
-import com.daxie.xops.openxops.WeaponDataCodeParser;
-import com.daxie.xops.weapon.WeaponData;
+import com.daxie.xops.properties.entity.weapon.WeaponData;
+import com.daxie.xops.properties.openxops.WeaponDataCodeParser;
 
 public class GetWeaponDataFromCode {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-//XOPSManipulator version:3.0.0
+//XOPSManipulator version:6.0.0
 
 package com.daxie.testspace.xopsmanipulator.openxops;
 
@@ -7,8 +7,8 @@ import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.daxie.xops.character.CharacterData;
-import com.daxie.xops.openxops.CharacterDataCodeParser;
+import com.daxie.xops.properties.entity.character.CharacterData;
+import com.daxie.xops.properties.openxops.CharacterDataCodeParser;
 
 public class GetCharacterDataFromCode {
 	public static void main(String[] args) {

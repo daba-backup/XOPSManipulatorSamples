@@ -1,11 +1,11 @@
-//XOPSManipulator version:3.0.0
+//XOPSManipulator version:6.0.0
 
 package com.daxie.testspace.xopsmanipulator.xms;
 
 import java.io.FileNotFoundException;
 
-import com.daxie.xops.ids.IDSManipulator;
-import com.daxie.xops.weapon.WeaponData;
+import com.daxie.xops.properties.entity.weapon.WeaponData;
+import com.daxie.xops.properties.xms.ids.IDSManipulator;
 
 public class LoadIDS {
 	public static void main(String[] args) {

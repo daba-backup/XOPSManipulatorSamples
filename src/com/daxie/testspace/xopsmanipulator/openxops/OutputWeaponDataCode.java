@@ -1,4 +1,4 @@
-//XOPSManipulator version:3.0.0
+//XOPSManipulator version:6.0.0
 
 package com.daxie.testspace.xopsmanipulator.openxops;
 
@@ -6,9 +6,9 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.daxie.xops.openxops.WeaponDataCodeOutputter;
-import com.daxie.xops.weapon.WeaponData;
-import com.daxie.xops.xgs.XGSManipulator;
+import com.daxie.xops.properties.entity.weapon.WeaponData;
+import com.daxie.xops.properties.openxops.WeaponDataCodeOutputter;
+import com.daxie.xops.properties.xms.xgs.XGSManipulator;
 
 public class OutputWeaponDataCode {
 	public static void main(String[] args) {
