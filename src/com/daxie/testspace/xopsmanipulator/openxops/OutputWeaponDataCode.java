@@ -2,7 +2,7 @@
 
 package com.daxie.testspace.xopsmanipulator.openxops;
 
-import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,7 +17,7 @@ public class OutputWeaponDataCode {
 		XGSManipulator xgs_manipulator = null;
 		try {
 			xgs_manipulator = new XGSManipulator(xgs_filename);
-		} catch (FileNotFoundException e) {
+		} catch (IOException e) {
 			System.out.println("File not found.");
 			return;
 		}

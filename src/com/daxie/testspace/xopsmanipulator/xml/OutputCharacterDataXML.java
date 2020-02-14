@@ -2,7 +2,7 @@
 
 package com.daxie.testspace.xopsmanipulator.xml;
 
-import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,7 +18,7 @@ public class OutputCharacterDataXML {
 		XCSManipulator xcs_manipulator = null;
 		try {
 			xcs_manipulator = new XCSManipulator(xcs_filename);
-		} catch (FileNotFoundException e) {
+		} catch (IOException e) {
 			System.out.println("File not found.");
 			return;
 		}

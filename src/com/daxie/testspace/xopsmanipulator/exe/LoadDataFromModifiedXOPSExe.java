@@ -2,7 +2,7 @@
 
 package com.daxie.testspace.xopsmanipulator.exe;
 
-import java.io.FileNotFoundException;
+import java.io.IOException;
 
 import com.daxie.xops.properties.entity.character.CharacterData;
 import com.daxie.xops.properties.entity.weapon.WeaponData;
@@ -23,7 +23,7 @@ public class LoadDataFromModifiedXOPSExe {
 			// Character data:0x000671E4
 			// Weapon name:0x0005E864
 			exe_manipulator = new XOPSExeManipulator(xops_filename, 0x0005E32C, 0x000671E4, 0x0005E864);
-		} catch (FileNotFoundException e) {
+		} catch (IOException e) {
 			System.out.println("File not found.");
 			return;
 		}

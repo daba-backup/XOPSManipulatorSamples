@@ -2,7 +2,7 @@
 
 package com.daxie.testspace.xopsmanipulator.pd1;
 
-import java.io.FileNotFoundException;
+import java.io.IOException;
 
 import com.daxie.basis.matrix.Matrix;
 import com.daxie.basis.matrix.MatrixFunctions;
@@ -18,7 +18,7 @@ public class PointManipulationWithMatrix {
 		PD1Manipulator pd1_manipulator = null;
 		try {
 			pd1_manipulator = new PD1Manipulator(pd1_orig_filename);
-		} catch (FileNotFoundException e) {
+		} catch (IOException e) {
 			System.out.println("File not found.");
 			return;
 		}

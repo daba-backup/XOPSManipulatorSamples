@@ -2,8 +2,7 @@
 
 package com.daxie.testspace.xopsmanipulator.openxops;
 
-import java.io.FileNotFoundException;
-import java.io.UnsupportedEncodingException;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -17,11 +16,8 @@ public class GetCharacterDataFromCode {
 		CharacterDataCodeParser code_parser = null;
 		try {
 			code_parser = new CharacterDataCodeParser(code_filename, "Shift-JIS");
-		} catch (FileNotFoundException e) {
+		} catch (IOException e) {
 			System.out.println("File not found.");
-			return;
-		} catch (UnsupportedEncodingException e) {
-			System.out.println("Unsupported encoding.");
 			return;
 		}
 

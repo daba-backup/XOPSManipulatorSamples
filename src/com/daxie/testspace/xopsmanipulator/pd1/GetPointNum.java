@@ -2,7 +2,7 @@
 
 package com.daxie.testspace.xopsmanipulator.pd1;
 
-import java.io.FileNotFoundException;
+import java.io.IOException;
 
 import com.daxie.xops.pd1.PD1Manipulator;
 
@@ -13,7 +13,7 @@ public class GetPointNum {
 		PD1Manipulator pd1_manipulator = null;
 		try {
 			pd1_manipulator = new PD1Manipulator(pd1_filename);
-		} catch (FileNotFoundException e) {
+		} catch (IOException e) {
 			System.out.println("File not found.");
 			return;
 		}

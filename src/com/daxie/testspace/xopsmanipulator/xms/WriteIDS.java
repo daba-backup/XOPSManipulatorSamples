@@ -2,7 +2,7 @@
 
 package com.daxie.testspace.xopsmanipulator.xms;
 
-import java.io.FileNotFoundException;
+import java.io.IOException;
 
 import com.daxie.xops.properties.xms.ids.IDSManipulator;
 
@@ -14,7 +14,7 @@ public class WriteIDS {
 		IDSManipulator ids_manipulator = null;
 		try {
 			ids_manipulator = new IDSManipulator(ids_orig_filename);
-		} catch (FileNotFoundException e) {
+		} catch (IOException e) {
 			System.out.println("File not found.");
 			return;
 		}

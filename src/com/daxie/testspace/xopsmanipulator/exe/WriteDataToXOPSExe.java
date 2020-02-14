@@ -2,7 +2,7 @@
 
 package com.daxie.testspace.xopsmanipulator.exe;
 
-import java.io.FileNotFoundException;
+import java.io.IOException;
 
 import com.daxie.xops.properties.exe.XOPSExeManipulator;
 
@@ -14,14 +14,14 @@ public class WriteDataToXOPSExe {
 		XOPSExeManipulator exe_manipulator = null;
 		try {
 			exe_manipulator = new XOPSExeManipulator(xops_orig_filename);
-		} catch (FileNotFoundException e) {
+		} catch (IOException e) {
 			System.out.println("File not found.");
 			return;
 		}
 
 		try {
 			exe_manipulator.Write(xops_dest_filename, true);
-		} catch (FileNotFoundException e) {
+		} catch (IOException e) {
 			System.out.println("File not found.");
 			return;
 		}

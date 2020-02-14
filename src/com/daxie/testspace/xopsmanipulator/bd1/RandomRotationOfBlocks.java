@@ -2,7 +2,7 @@
 
 package com.daxie.testspace.xopsmanipulator.bd1;
 
-import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.List;
 import java.util.Random;
 
@@ -22,7 +22,7 @@ public class RandomRotationOfBlocks {
 		BD1Manipulator bd1_manipulator = null;
 		try {
 			bd1_manipulator = new BD1Manipulator(bd1_orig_filename);
-		} catch (FileNotFoundException e) {
+		} catch (IOException e) {
 			System.out.println("File not found.");
 			return;
 		}

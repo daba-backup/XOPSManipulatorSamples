@@ -2,7 +2,7 @@
 
 package com.daxie.testspace.xopsmanipulator.xms;
 
-import java.io.FileNotFoundException;
+import java.io.IOException;
 
 import com.daxie.xops.properties.xms.xgs.XGSManipulator;
 
@@ -14,7 +14,7 @@ public class WriteXGS {
 		XGSManipulator xgs_manipulator = null;
 		try {
 			xgs_manipulator = new XGSManipulator(xgs_orig_filename);
-		} catch (FileNotFoundException e) {
+		} catch (IOException e) {
 			System.out.println("File not found.");
 			return;
 		}

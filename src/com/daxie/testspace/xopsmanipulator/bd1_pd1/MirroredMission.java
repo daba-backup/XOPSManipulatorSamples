@@ -2,7 +2,7 @@
 
 package com.daxie.testspace.xopsmanipulator.bd1_pd1;
 
-import java.io.FileNotFoundException;
+import java.io.IOException;
 
 import com.daxie.xops.bd1.BD1Manipulator;
 import com.daxie.xops.pd1.PD1Manipulator;
@@ -19,7 +19,7 @@ public class MirroredMission {
 		try {
 			bd1_manipulator = new BD1Manipulator(bd1_orig_filename);
 			pd1_manipulator = new PD1Manipulator(pd1_orig_filename);
-		} catch (FileNotFoundException e) {
+		} catch (IOException e) {
 			System.out.println("File not found.");
 			return;
 		}
