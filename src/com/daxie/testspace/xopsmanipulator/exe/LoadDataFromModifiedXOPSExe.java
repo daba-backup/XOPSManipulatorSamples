@@ -1,5 +1,3 @@
-//XOPSManipulator version:6.0.0
-
 package com.daxie.testspace.xopsmanipulator.exe;
 
 import java.io.IOException;
@@ -9,7 +7,7 @@ import com.daxie.xops.properties.entity.weapon.WeaponData;
 import com.daxie.xops.properties.exe.XOPSExeManipulator;
 
 //This sample shows how to load data from a modified exe.
-//This sample aims at loading data from Ghillie In the Mist.
+//This sample aims to load data from Ghillie In the Mist.
 public class LoadDataFromModifiedXOPSExe {
 	public static void main(String[] args) {
 		final String xops_filename = "./Ghillie In the Mist.exe";

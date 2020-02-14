@@ -1,5 +1,3 @@
-//XOPSManipulator version:4.0.1
-
 package com.daxie.testspace.xopsmanipulator.bd1;
 
 import com.daxie.xops.bd1.BD1Generator;

@@ -1,5 +1,3 @@
-//XOPSManipulator version:6.0.0
-
 package com.daxie.testspace.xopsmanipulator.exe;
 
 import java.io.IOException;
@@ -8,7 +6,7 @@ import com.daxie.xops.properties.entity.weapon.WeaponData;
 import com.daxie.xops.properties.exe.XOPSExeManipulator;
 import com.daxie.xops.properties.xms.xgs.XGSManipulator;
 
-//Port weapon data acquired from a XGS file to an exe file of XOPS.
+//Port weapon data obtained from a XGS file to an exe file of XOPS.
 public class PortWeaponDataToXOPSExe {
 	public static void main(String[] args) {
 		final String xgs_filename = "./temp.xgs";

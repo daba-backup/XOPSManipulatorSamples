@@ -1,5 +1,3 @@
-//XOPSManipulator version:3.0.0
-
 package com.daxie.testspace.xopsmanipulator.mif;
 
 import java.io.IOException;

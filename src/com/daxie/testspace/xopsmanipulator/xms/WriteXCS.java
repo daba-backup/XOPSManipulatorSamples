@@ -1,5 +1,3 @@
-//XOPSManipulator version:6.0.0
-
 package com.daxie.testspace.xopsmanipulator.xms;
 
 import java.io.IOException;
