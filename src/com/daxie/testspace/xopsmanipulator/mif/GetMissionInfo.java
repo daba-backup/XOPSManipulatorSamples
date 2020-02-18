@@ -1,7 +1,6 @@
 package com.daxie.testspace.xopsmanipulator.mif;
 
 import java.io.IOException;
-import java.util.List;
 
 import com.daxie.xops.mif.MIFManipulator;
 import com.daxie.xops.mif.MissionInfo;
@@ -23,32 +22,6 @@ public class GetMissionInfo {
 		}
 
 		MissionInfo mif = mif_manipulator.GetMissionInfo();
-
-		System.out.println("[Mission name]");
-		System.out.println(mif.GetMissionName());
-		System.out.println("[Mission formal name]");
-		System.out.println(mif.GetMissionFormalName());
-		System.out.println("[BD1 filename]");
-		System.out.println(mif.GetBD1Filename());
-		System.out.println("[PD1 filename]");
-		System.out.println(mif.GetPD1Filename());
-		System.out.println("[Sky type]");
-		System.out.println(mif.GetSkyType());
-		System.out.println("[Extra hitcheck]");
-		System.out.println(mif.GetExtraHitcheckFlag());
-		System.out.println("[Darken screen]");
-		System.out.println(mif.GetDarkenScreenFlag());
-		System.out.println("[Article info filename]");
-		System.out.println(mif.GetArticleInfoFilename());
-		System.out.println("[Image 1 filename]");
-		System.out.println(mif.GetImage1Filename());
-		System.out.println("[Image 2 filename]");
-		System.out.println(mif.GetImage2Filename());
-
-		List<String> briefing_text = mif.GetBriefingText();
-		System.out.println("[Briefing text]");
-		for (String line : briefing_text) {
-			System.out.println(line);
-		}
+		System.out.println(mif);
 	}
 }
