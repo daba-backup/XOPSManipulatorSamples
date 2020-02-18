@@ -36,18 +36,17 @@ public class RandomRotationOfBlocks {
 
 			Vector[] vertex_positions = block.GetVertexPositions();
 
-			// Get the centroid of the block.
+			// Get the center of the block.
 			Vector centroid = VectorFunctions.VGet(0.0f, 0.0f, 0.0f);
 			for (int i = 0; i < vertex_positions.length; i++) {
 				centroid = VectorFunctions.VAdd(centroid, vertex_positions[i]);
 			}
 			centroid = VectorFunctions.VScale(centroid, 1.0f / vertex_positions.length);
 
-			// Get a matrix to translate the centroid of the block to the origin.
+			// Get a matrix to translate the center of the block to the origin.
 			Vector to_orig_vec = VectorFunctions.VSub(VectorFunctions.VGet(0.0f, 0.0f, 0.0f), centroid);
 			Matrix to_orig_mat = MatrixFunctions.MGetTranslate(to_orig_vec);
-			// Get a matrix to translate the centroid of the block to where it has been
-			// before.
+			// Get a matrix to translate the center of the block to where it was before.
 			Vector to_cent_vec = VectorFunctions.VScale(to_orig_vec, -1.0f);
 			Matrix to_cent_mat = MatrixFunctions.MGetTranslate(to_cent_vec);
 

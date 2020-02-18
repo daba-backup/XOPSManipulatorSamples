@@ -24,7 +24,7 @@ public class WriteMIF {
 
 		MissionInfo mif = mif_manipulator.GetMissionInfo();
 
-		// Change the mission name to upper case.
+		// Convert the mission name to upper case.
 		String mission_name = mif.GetMissionName();
 		mission_name = mission_name.toUpperCase();
 		mif.SetMissionName(mission_name);

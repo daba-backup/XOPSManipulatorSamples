@@ -18,7 +18,6 @@ public class GetPointNum {
 
 		// Get the total number of points.
 		int point_num = pd1_manipulator.GetPointNum();
-		// Points with 1 set to the first parameter denote characters.
 		// Get the total number of characters.
 		int character_num = pd1_manipulator.GetPointNum(1);
 

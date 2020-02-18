@@ -17,7 +17,7 @@ public class SetTextureFilenames {
 			return;
 		}
 
-		// Set the name of the 0th texture to "test.bmp".
+		// Set the name of the 0th texture.
 		bd1_manipulator.SetTextureFilename(0, "test.bmp");
 
 		bd1_manipulator.WriteAsBD1(bd1_dest_filename);

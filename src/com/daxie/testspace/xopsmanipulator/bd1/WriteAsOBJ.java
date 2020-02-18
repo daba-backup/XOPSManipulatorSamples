@@ -17,8 +17,6 @@ public class WriteAsOBJ {
 			return;
 		}
 
-		// The default coordinate system in DirectX is left-handed.
-		// Invert the blocks in case the coordinate system you want is right-handed.
 		bd1_manipulator.InvertZ();
 
 		bd1_manipulator.WriteAsOBJ(obj_dest_filename);
