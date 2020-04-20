@@ -14,7 +14,7 @@ public class GetMissionInfo {
 		try {
 			mif_manipulator = new MIFManipulator(mif_filename, encoding);
 		} catch (IOException e) {
-			System.out.println("File not found.");
+			System.out.println("Error");
 			return;
 		} catch (NumberFormatException e) {
 			e.printStackTrace();

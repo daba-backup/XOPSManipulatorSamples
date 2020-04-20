@@ -16,7 +16,7 @@ public class OutputCharacterDataCode {
 		try {
 			xcs_manipulator = new XCSManipulator(xcs_filename);
 		} catch (IOException e) {
-			System.out.println("File not found.");
+			System.out.println("Error");
 			return;
 		}
 

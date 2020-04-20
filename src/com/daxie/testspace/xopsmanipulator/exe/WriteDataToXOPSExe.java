@@ -13,15 +13,10 @@ public class WriteDataToXOPSExe {
 		try {
 			exe_manipulator = new XOPSExeManipulator(xops_orig_filename);
 		} catch (IOException e) {
-			System.out.println("File not found.");
+			System.out.println("Error");
 			return;
 		}
 
-		try {
-			exe_manipulator.Write(xops_dest_filename, true);
-		} catch (IOException e) {
-			System.out.println("File not found.");
-			return;
-		}
+		exe_manipulator.Write(xops_dest_filename, true);
 	}
 }

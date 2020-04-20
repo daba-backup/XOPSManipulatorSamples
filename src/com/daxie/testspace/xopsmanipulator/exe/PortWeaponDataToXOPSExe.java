@@ -25,11 +25,6 @@ public class PortWeaponDataToXOPSExe {
 		XOPSExeManipulator exe_manipulator = new XOPSExeManipulator();
 		exe_manipulator.SetWeaponDataArray(weapon_data_array);
 
-		try {
-			exe_manipulator.Write(xops_filename, true);
-		} catch (IOException e) {
-			System.out.println("File not found. filename:" + xops_filename);
-			return;
-		}
+		exe_manipulator.Write(xops_filename, true);
 	}
 }

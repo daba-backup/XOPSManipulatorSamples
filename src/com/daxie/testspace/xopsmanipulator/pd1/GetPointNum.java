@@ -12,7 +12,7 @@ public class GetPointNum {
 		try {
 			pd1_manipulator = new PD1Manipulator(pd1_filename);
 		} catch (IOException e) {
-			System.out.println("File not found.");
+			System.out.println("Error");
 			return;
 		}
 

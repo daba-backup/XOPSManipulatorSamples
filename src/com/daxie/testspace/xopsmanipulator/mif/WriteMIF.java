@@ -15,13 +15,9 @@ public class WriteMIF {
 		try {
 			mif_manipulator = new MIFManipulator(mif_orig_filename, encoding);
 		} catch (IOException e) {
-			System.out.println("File not found.");
-			return;
-		} catch (NumberFormatException e) {
-			e.printStackTrace();
+			System.out.println("Error");
 			return;
 		}
-
 		MissionInfo mif = mif_manipulator.GetMissionInfo();
 
 		// Convert the mission name to upper case.
@@ -31,11 +27,6 @@ public class WriteMIF {
 
 		mif_manipulator.SetMissionInfo(mif);
 
-		try {
-			mif_manipulator.Write(mif_dest_filename, encoding);
-		} catch (IOException e) {
-			System.out.println("Failed to create a MIF file.");
-			return;
-		}
+		mif_manipulator.Write(mif_dest_filename, encoding);
 	}
 }

@@ -13,7 +13,7 @@ public class WriteXCS {
 		try {
 			xcs_manipulator = new XCSManipulator(xcs_orig_filename);
 		} catch (IOException e) {
-			System.out.println("File not found.");
+			System.out.println("Error");
 			return;
 		}
 

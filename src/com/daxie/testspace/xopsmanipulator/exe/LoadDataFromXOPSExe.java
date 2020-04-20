@@ -14,7 +14,7 @@ public class LoadDataFromXOPSExe {
 		try {
 			exe_manipulator = new XOPSExeManipulator(xops_filename);
 		} catch (IOException e) {
-			System.out.println("File not found.");
+			System.out.println("Error");
 			return;
 		}
 

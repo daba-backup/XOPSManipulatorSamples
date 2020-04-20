@@ -13,7 +13,7 @@ public class LoadXGS {
 		try {
 			xgs_manipulator = new XGSManipulator(xgs_filename);
 		} catch (IOException e) {
-			System.out.println("File not found.");
+			System.out.println("Error");
 			return;
 		}
 

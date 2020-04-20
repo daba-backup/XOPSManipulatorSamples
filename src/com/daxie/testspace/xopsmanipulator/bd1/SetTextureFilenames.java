@@ -13,7 +13,7 @@ public class SetTextureFilenames {
 		try {
 			bd1_manipulator = new BD1Manipulator(bd1_orig_filename);
 		} catch (IOException e) {
-			System.out.println("File not found.");
+			System.out.println("Error");
 			return;
 		}
 

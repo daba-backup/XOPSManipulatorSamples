@@ -15,18 +15,10 @@ public class ConvertEncoding {
 		try {
 			mif_manipulator = new MIFManipulator(mif_orig_filename, orig_encoding);
 		} catch (IOException e) {
-			System.out.println("File not found.");
-			return;
-		} catch (NumberFormatException e) {
-			e.printStackTrace();
+			System.out.println("Error");
 			return;
 		}
 
-		try {
-			mif_manipulator.Write(mif_dest_filename, dest_encoding);
-		} catch (IOException e) {
-			System.out.println("Failed to create a MIF file.");
-			return;
-		}
+		mif_manipulator.Write(mif_dest_filename, dest_encoding);
 	}
 }

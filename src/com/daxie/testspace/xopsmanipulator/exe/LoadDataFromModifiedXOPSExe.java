@@ -21,7 +21,7 @@ public class LoadDataFromModifiedXOPSExe {
 			// Weapon name:0x0005E864
 			exe_manipulator = new XOPSExeManipulator(xops_filename, 0x0005E32C, 0x000671E4, 0x0005E864);
 		} catch (IOException e) {
-			System.out.println("File not found.");
+			System.out.println("Error");
 			return;
 		}
 

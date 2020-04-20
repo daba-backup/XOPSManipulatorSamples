@@ -15,7 +15,7 @@ public class GetWeaponDataFromCode {
 		try {
 			code_parser = new WeaponDataCodeParser(code_filename, "Shift-JIS");
 		} catch (IOException e) {
-			System.out.println("File not found.");
+			System.out.println("Error");
 			return;
 		}
 
